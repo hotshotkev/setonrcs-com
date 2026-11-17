@@ -7,7 +7,6 @@
   const pageContent = document.getElementById("page-content");
   const viewStage = document.getElementById("view-stage");
   const ageStorageKey = "a-little-help-age-confirmed";
-  const paymentLink = "https://buy.stripe.com/dRm5kEeVMgJVdpW8X9gA800";
   const viewButtons = [...document.querySelectorAll(".view-toggle-button")];
   let viewMode = window.matchMedia("(max-width: 650px)").matches ? "mobile" : "desktop";
 
@@ -75,34 +74,4 @@
     ageGate.hidden = true;
     leaveScreen.hidden = false;
   });
-
-  const disclosureCheck = document.getElementById("disclosure-check");
-  const paymentButton = document.getElementById("payment-button");
-  const paymentStatus = document.getElementById("payment-status");
-  const paymentQr = document.getElementById("payment-qr");
-  const paymentQrLink = paymentQr.querySelector("a");
-
-  paymentButton.href = paymentLink;
-  paymentQrLink.href = paymentLink;
-
-  const updatePaymentOptions = () => {
-    if (disclosureCheck.checked) {
-      paymentButton.classList.remove("is-disabled");
-      paymentButton.setAttribute("aria-disabled", "false");
-      paymentButton.removeAttribute("tabindex");
-      paymentStatus.textContent = "Acknowledgment recorded for this page view. Review your details on Stripe before paying.";
-      paymentButton.style.pointerEvents = "auto";
-      paymentQr.hidden = false;
-    } else {
-      paymentButton.classList.add("is-disabled");
-      paymentButton.setAttribute("aria-disabled", "true");
-      paymentButton.setAttribute("tabindex", "-1");
-      paymentButton.style.pointerEvents = "none";
-      paymentStatus.textContent = "Review and acknowledge the disclosures to continue to Stripe Checkout.";
-      paymentQr.hidden = true;
-    }
-  };
-
-  disclosureCheck.addEventListener("change", updatePaymentOptions);
-  updatePaymentOptions();
 })();
