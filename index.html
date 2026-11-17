@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f2e9">
+    <meta
+      name="description"
+      content="A personal fundraiser seeking help with medical expenses and legal costs."
+    >
+    <title>A Little Help — Personal Fundraiser</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="age-gate" id="age-gate" role="dialog" aria-modal="true" aria-labelledby="age-title">
+      <div class="age-card">
+        <span class="age-mark" aria-hidden="true">✳</span>
+        <p class="eyebrow">Before you continue</p>
+        <h1 id="age-title">I’m Sorry Kevin W.</h1>
+        <label class="age-acknowledgment" for="age-apology-check">
+          <input id="age-apology-check" type="checkbox">
+          <span>I acknowledge this apology.</span>
+        </label>
+        <p class="age-fine-print">By selecting Agree, you confirm that you are 18 or older. This is self-attestation only, not independent age verification.</p>
+        <div class="age-actions">
+          <button class="button button-primary" id="age-confirm" type="button" disabled>Agree</button>
+          <button class="button button-quiet" id="age-leave" type="button">Leave this page</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="view-stage">
+    <div id="page-content">
+      <header class="site-header">
+        <a class="wordmark" href="#home" aria-label="A Little Help, home">
+          <span class="wordmark-icon" aria-hidden="true">✳</span>
+          <span>A Little Help</span>
+        </a>
+        <a class="header-link" href="#story">Read the details <span aria-hidden="true">↓</span></a>
+      </header>
+
+      <main id="home">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span>A personal fundraiser</p>
+          <h1 id="page-title">A little help.<br><em>A lot of hope.</em></h1>
+          <p class="hero-intro">
+            I’m seeking help with medical expenses, legal costs, and losses related
+            to statements I believe have harmed my reputation. I’m grateful for
+            your kindness, prayers, or simply taking the time to read.
+          </p>
+          <a class="text-link" href="#donate">Read the giving details <span aria-hidden="true">↘</span></a>
+          <div class="verse">
+            <span class="verse-mark" aria-hidden="true">“</span>
+            <blockquote>“I was sick, and ye visited me.”</blockquote>
+            <cite>Matthew 25:36, King James Version</cite>
+          </div>
+        </div>
+
+        <aside class="goal-card" aria-label="Fundraising goal">
+          <div class="goal-orbit" aria-hidden="true">
+            <svg viewBox="0 0 220 220" role="presentation">
+              <circle cx="110" cy="110" r="94" fill="none" stroke="currentColor" stroke-width="1"></circle>
+              <circle cx="110" cy="110" r="74" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2 7"></circle>
+              <path d="M110 35v150M35 110h150M57 57l106 106M163 57 57 163" fill="none" stroke="currentColor" stroke-width="1"></path>
+              <circle cx="110" cy="110" r="5" fill="currentColor"></circle>
+            </svg>
+          </div>
+          <p class="goal-label">Fundraising goal</p>
+          <p class="goal-amount">$325,000</p>
+          <p class="goal-caption">A goal, not a promise of compensation or a legal finding.</p>
+          <div class="raised-total">
+            <p class="raised-label">Offline gifts reported</p>
+            <p class="raised-amount" id="raised-amount">Over $12,554</p>
+          </div>
+          <div class="raised-note">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Reported by the organizer; this static page does not verify or update totals.</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="story-section" id="story" aria-labelledby="story-title">
+        <div class="section-label"><span>01</span> WHY I’M ASKING</div>
+        <div class="story-content">
+          <div>
+            <h2 id="story-title">A difficult season,<br><em>met with faith.</em></h2>
+            <p class="story-caption">“Bear ye one another’s burdens.” <span>— Galatians 6:2, KJV</span></p>
+          </div>
+          <div class="story-copy">
+            <p>
+              I’m asking for personal support toward medical expenses, legal
+              costs, and losses I associate with statements I believe were
+              defamatory and harmed my reputation. These are my allegations and
+              described losses; this page does not represent that a court has
+              determined that defamation occurred or that any compensation is
+              owed.
+            </p>
+            <p>
+              Contributions are voluntary personal gifts to me. They are not a
+              charitable donation, are not tax-deductible, and are not a purchase
+              or investment. I do not promise a particular outcome or use of
+              funds beyond the purposes described above.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="support-note" aria-labelledby="support-note-title">
+        <div class="section-label"><span>02</span> WITH GRATITUDE</div>
+        <h2 id="support-note-title">Thank you for your prayers and kindness.</h2>
+        <p>I’m grateful for every word of encouragement. To respect everyone’s privacy, supporter names and personal messages are not published here without their permission.</p>
+      </section>
+
+      <section class="donation-section" id="donate" aria-labelledby="donation-title">
+        <div class="donation-copy">
+          <div class="section-label section-label-light"><span>03</span> IF YOU’D LIKE TO HELP</div>
+          <h2 id="donation-title">Thank you for considering a gift.</h2>
+          <p>
+            Before any payment, please read and acknowledge the following:
+          </p>
+          <div class="offline-giving">
+            <p class="offline-label">Offline gifts</p>
+            <p>Offline contributions are accepted directly by the organizer and are not processed through Stripe. The following breakdown and total are reported by the organizer and are not independently verified by this page.</p>
+            <ul class="offline-list">
+              <li><span>Mike D.</span><strong>$7,000</strong></li>
+              <li><span>Kelly W.</span><strong>$4,000</strong></li>
+              <li><span>Hat cash collection</span><strong>Included; amount not itemized</strong></li>
+            </ul>
+            <p class="offline-total">Total offline gifts reported: <strong>over $12,554</strong></p>
+          </div>
+          <ul class="disclosure-list">
+            <li>Any payment would be a voluntary personal gift transferred directly to me, not a charitable contribution.</li>
+            <li>The Stripe link starts a recurring monthly payment. Review the amount and billing schedule on Stripe Checkout before confirming.</li>
+            <li>Gifts are not tax-deductible. Please consult your own tax adviser if you have questions.</li>
+            <li>Because gifts are voluntary personal transfers, they are intended to be final and non-refundable, except where a refund is required by law or the payment provider.</li>
+            <li>Funds may support the medical expenses, legal costs, and claimed reputational losses described above. No legal outcome or compensation is guaranteed.</li>
+            <li>This fundraiser is personal and is not affiliated with, sponsored by, or endorsed by any church or religious organization.</li>
+          </ul>
+          <label class="acknowledgment" for="disclosure-check">
+            <input id="disclosure-check" type="checkbox">
+            <span>I have read and understand these disclosures, including that the Stripe payment is monthly and recurring.</span>
+          </label>
+          <p class="payment-status" id="payment-status" role="status" aria-live="polite">
+            Review and acknowledge the disclosures to continue to Stripe Checkout.
+          </p>
+          <a class="payment-button is-disabled" id="payment-button" aria-disabled="true" tabindex="-1" rel="noopener noreferrer">
+            Continue to Stripe Checkout <span aria-hidden="true">↗</span>
+          </a>
+          <div class="payment-qr" id="payment-qr" hidden>
+            <p>Or scan this Stripe QR code</p>
+            <a href="https://buy.stripe.com/dRm5kEeVMgJVdpW8X9gA800" target="_blank" rel="noopener noreferrer" aria-label="Open the Stripe Payment Link encoded in the QR code">
+              <img src="assets/payment-qr.png" alt="Stripe payment QR code. Scan to open the payment link.">
+            </a>
+          </div>
+          <p class="review-note">Before accepting funds, have the disclosures reviewed by an attorney and confirm the fundraiser and payment terms comply with Stripe’s current requirements.</p>
+          <p class="disclaimer-link"><a href="disclaimer.html">Read the full site and fundraiser disclaimer</a></p>
+        </div>
+        <div class="donation-art" aria-hidden="true">
+          <svg viewBox="0 0 320 360" role="presentation">
+            <path d="M160 35c-42 45-82 92-82 151a82 82 0 0 0 164 0c0-59-40-106-82-151Z" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+            <path d="M160 89c-28 33-53 65-53 102a53 53 0 0 0 106 0c0-37-25-69-53-102Z" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3 6"></path>
+            <path d="M160 134v101m-51-51h102" fill="none" stroke="currentColor" stroke-width="1"></path>
+            <path d="M47 307c34-25 70-37 113-37s79 12 113 37" fill="none" stroke="currentColor" stroke-width="1"></path>
+            <circle cx="160" cy="37" r="3" fill="currentColor"></circle>
+            <circle cx="80" cy="187" r="3" fill="currentColor"></circle>
+            <circle cx="240" cy="187" r="3" fill="currentColor"></circle>
+          </svg>
+          <span class="art-caption">Kindness, freely given.</span>
+        </div>
+        <div class="entity-credit">
+          <img src="assets/arch-ai-datacenters.png" alt="">
+          <span>Website design and implementation supported by <strong>Arch AI DataCenters</strong></span>
+        </div>
+      </section>
+
+      <section class="apology-section" aria-labelledby="apology-title">
+        <div class="apology-icon" aria-hidden="true">✳</div>
+        <div class="apology-copy">
+          <p class="eyebrow">A personal apology</p>
+          <h2 id="apology-title">To Kevin Walters</h2>
+          <p>
+            Kevin, I’m sorry for lying and for being blasphemous. I take
+            responsibility for my words and actions, and I regret the hurt they
+            caused. I’m working to be more honest and respectful.
+          </p>
+          <p class="apology-note">
+            This apology is separate from the fundraiser. Kevin Walters is not
+            associated with or endorsing this page.
+          </p>
+        </div>
+      </section>
+      </main>
+
+      <footer class="site-footer">
+        <span>A Little Help <span aria-hidden="true">·</span> Personal fundraiser</span>
+        <span class="footer-links"><a href="disclaimer.html">Disclaimer</a><a href="#home">Back to top ↑</a></span>
+      </footer>
+    </div>
+    </div>
+    <div class="leave-screen" id="leave-screen" hidden>
+      <p>Thanks for stopping by. You can close this tab now.</p>
+    </div>
+    <div class="view-toggle" role="group" aria-label="Preview the page layout">
+      <button class="view-toggle-button" type="button" data-view="desktop" aria-label="Show desktop layout" title="Desktop layout" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="1.5"></rect><path d="M8 21h8m-4-4v4"></path></svg>
+      </button>
+      <button class="view-toggle-button" type="button" data-view="mobile" aria-label="Show mobile layout" title="Mobile layout" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"></rect><path d="M10 5h4m-2 13.5h.01"></path></svg>
+      </button>
+    </div>
+  </body>
+</html>
