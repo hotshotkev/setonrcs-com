@@ -25,6 +25,6 @@ Arch AI DataCenters is credited beneath the payment section for contributing to 
 
 The page uses responsive HTML/CSS and a small fixed desktop/mobile layout preview toggle. It uses standard browser features; verify the final hosted version in Opera GX, Chrome, Edge, and target mobile browsers before launch.
 
-The GitHub Actions workflow in `.github/workflows/deploy-pages.yml` is prepared to publish the fundraiser site from the `hotshotkev-medical-donations-page` branch. Treat the site as unpublished until the Pages deployment completes successfully and its public URL is verified.
+The GitHub Actions workflow in `.github/workflows/deploy-pages.yml` publishes the fundraiser site from the `hotshotkev-medical-donations-page` branch. The current public preview is https://hotshotkev.github.io/setonrcs-com/.
 
 Search metadata uses an accurate page title and description. Hidden keyword lists and unrelated church or school names are intentionally omitted so search results do not imply an affiliation or endorsement.
