@@ -4,14 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f5f2e9">
-    <meta name="description" content="A personal apology to Kevin Walters.">
-    <title>A Personal Apology</title>
+    <meta name="description" content="A general, non-person-specific overview of Missouri defamation law and related speech protections.">
+    <title>Missouri Defamation Law: General Information</title>
     <style>
       :root {
         color-scheme: light;
         --paper: #f5f2e9;
         --ink: #20372d;
         --ink-soft: #59685d;
+        --green: #365b47;
+        --line: #d8d1c1;
+        --white: #fffefa;
       }
 
       * { box-sizing: border-box; }
@@ -47,23 +50,85 @@
       .brand-note { color: var(--ink-soft); font-size: 10px; }
 
       main {
-        display: grid;
-        flex: 1;
-        width: 100%;
-        place-items: center;
-        padding: 24px;
-        text-align: center;
+        width: min(860px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: 35px 0 80px;
       }
 
-      .apology {
+      .eyebrow {
         margin: 0;
-        font: 700 clamp(38px, 7vw, 68px)/1.1 Georgia, "Times New Roman", serif;
-        letter-spacing: -.04em;
+        color: var(--green);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: .14em;
+        text-transform: uppercase;
       }
+
+      h1, h2 { font-family: Georgia, "Times New Roman", serif; }
+
+      h1 {
+        margin: 15px 0;
+        font-size: clamp(38px, 6vw, 58px);
+        font-weight: 400;
+        letter-spacing: -.04em;
+        line-height: 1.08;
+      }
+
+      .intro {
+        max-width: 700px;
+        color: var(--ink-soft);
+        font-size: 16px;
+        line-height: 1.8;
+      }
+
+      .notice {
+        margin: 25px 0 35px;
+        padding: 18px 20px;
+        border: 1px solid var(--line);
+        background: var(--white);
+        color: var(--ink-soft);
+        font-size: 13px;
+        line-height: 1.75;
+      }
+
+      .notice strong { color: var(--ink); }
+
+      section {
+        padding: 24px 0;
+        border-top: 1px solid var(--line);
+      }
+
+      h2 {
+        margin: 0 0 10px;
+        font-size: 25px;
+        font-weight: 400;
+      }
+
+      section p, section li {
+        color: var(--ink-soft);
+        font-size: 14px;
+        line-height: 1.8;
+      }
+
+      section p { margin: 0 0 12px; }
+      section ul { margin: 0; padding-left: 21px; }
+      a { color: var(--green); text-underline-offset: 3px; }
+
+      .sources {
+        display: grid;
+        gap: 9px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .sources li { font-size: 13px; }
 
       @media (max-width: 600px) {
         .brand { padding-inline: 16px; }
-        main { padding: 24px 18px; }
+        main { padding-top: 20px; }
+        .intro { font-size: 14px; }
+        section p, section li { font-size: 13px; }
       }
     </style>
   </head>
@@ -74,7 +139,46 @@
       <span class="brand-note">Website design and implementation support</span>
     </header>
     <main>
-      <h1 class="apology">I'm sorry to Kevin Walters.</h1>
+      <p class="eyebrow">General, non-person-specific information</p>
+      <h1>Missouri defamation law</h1>
+      <p class="intro">Missouri defamation disputes are governed by statutes, court decisions, and constitutional protections. The rules below are a high-level overview only; applying them requires reviewing the specific words, context, audience, and evidence.</p>
+
+      <div class="notice">
+        <strong>Not legal advice or a legal notice.</strong> This page does not describe or accuse any person, resolve whether a statement is true or false, or demand that anyone take action. Consult a licensed Missouri attorney about a specific situation.
+      </div>
+
+      <section aria-labelledby="time-limit-title">
+        <h2 id="time-limit-title">Time limits</h2>
+        <p>Missouri Revised Statutes § 516.140 sets a two-year limitations period for actions involving libel, slander, and injurious falsehood. Section 516.100 supplies a general accrual rule tied to when resulting damage is sustained and capable of ascertainment. How those provisions apply, and whether any other rule or exception matters, is fact-specific; do not use this summary to calculate a filing deadline.</p>
+      </section>
+
+      <section aria-labelledby="speech-title">
+        <h2 id="speech-title">Speech and truth</h2>
+        <p>Article I, Section 8 of the Missouri Constitution protects freedom of speech while also stating that people are responsible for abuses of that liberty. It expressly allows truth to be offered as evidence in libel and slander suits. The constitutional text does not decide how any particular dispute should come out.</p>
+      </section>
+
+      <section aria-labelledby="analysis-title">
+        <h2 id="analysis-title">Questions that may matter</h2>
+        <p>Depending on the claim and context, legal analysis may consider whether a communication asserted a verifiable fact or expressed opinion, whether it was shared with someone other than the subject, whether it identified an individual, whether it was false, the applicable fault standard, any privilege or defense, and whether legally recognized harm can be shown. These are not a checklist that determines an outcome; standards can differ by context.</p>
+      </section>
+
+      <section aria-labelledby="practical-title">
+        <h2 id="practical-title">If you have a specific concern</h2>
+        <ul>
+          <li>Preserve the complete communication, its date, source, audience, and surrounding context.</li>
+          <li>Avoid editing, reposting, or escalating disputed statements while seeking advice.</li>
+          <li>Ask a Missouri attorney to review current law, possible defenses, deadlines, and appropriate next steps before sending a legal demand.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="sources-title">
+        <h2 id="sources-title">Official sources</h2>
+        <ul class="sources">
+          <li><a href="https://revisor.mo.gov/main/OneSection.aspx?section=516.140">Missouri Revised Statutes § 516.140</a> — limitations periods, including libel, slander, and injurious falsehood.</li>
+          <li><a href="https://revisor.mo.gov/main/OneSection.aspx?section=516.100">Missouri Revised Statutes § 516.100</a> — general accrual rule for civil actions under Chapter 516.</li>
+          <li><a href="https://revisor.mo.gov/main/OneSection.aspx?section=I%208&amp;bid=31708&amp;constit=y">Missouri Constitution, Article I, Section 8</a> — freedom of speech and truth in libel and slander suits.</li>
+        </ul>
+      </section>
     </main>
   </body>
 </html>
