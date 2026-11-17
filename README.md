@@ -42,4 +42,4 @@ The fundraiser Pages project uses:
 
 The fundraiser Pages hostname is https://setonrcs-com.pages.dev/. The apex domains `setonrcs.com` and `setonsrc.com` are configured on this project and verified over HTTPS. No `www` aliases are configured. GitHub Pages remains available as a fallback.
 
-The separate Pages project `setonrcs-defamation` serves `defamation-site/` from the same production branch. Its current page is a neutral placeholder, not a legal notice or an allegation about any person. The intended custom domain is `defamation.setonrcs.com`.
+The separate Pages project `setonrcs-defamation` serves `defamation-site/` from the same production branch at `defamation.setonrcs.com`. Its page displays a brief personal apology and makes no allegation or claim of endorsement.

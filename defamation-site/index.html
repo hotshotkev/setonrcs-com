@@ -4,21 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f5f2e9">
-    <meta name="description" content="General information about cease-and-desist communications. This page is not legal advice or a notice directed at anyone.">
-    <title>General Cease-and-Desist Information</title>
+    <meta name="description" content="A personal apology to Kevin Walters.">
+    <title>A Personal Apology</title>
     <style>
       :root {
         color-scheme: light;
         --paper: #f5f2e9;
         --ink: #20372d;
         --ink-soft: #59685d;
-        --green: #365b47;
-        --line: #d8d1c1;
       }
 
       * { box-sizing: border-box; }
 
       body {
+        display: flex;
+        flex-direction: column;
         min-height: 100vh;
         margin: 0;
         background: var(--paper);
@@ -47,42 +47,23 @@
       .brand-note { color: var(--ink-soft); font-size: 10px; }
 
       main {
-        width: min(760px, calc(100% - 40px));
-        margin: 50px auto 0;
-        padding-bottom: 80px;
+        display: grid;
+        flex: 1;
+        width: 100%;
+        place-items: center;
+        padding: 24px;
+        text-align: center;
       }
 
-      .eyebrow {
+      .apology {
         margin: 0;
-        color: var(--green);
-        font-size: 11px;
-        font-weight: 700;
-        letter-spacing: .14em;
-        text-transform: uppercase;
-      }
-
-      h1 {
-        margin: 18px 0;
-        font: 400 clamp(38px, 6vw, 58px)/1.08 Georgia, "Times New Roman", serif;
+        font: 700 clamp(38px, 7vw, 68px)/1.1 Georgia, "Times New Roman", serif;
         letter-spacing: -.04em;
       }
 
-      .notice {
-        padding: 22px 24px;
-        border: 1px solid var(--line);
-        background: #fffefa;
-        color: var(--ink-soft);
-        font-size: 15px;
-        line-height: 1.8;
-      }
-
-      .notice p { margin: 0 0 14px; }
-      .notice p:last-child { margin-bottom: 0; }
-
       @media (max-width: 600px) {
         .brand { padding-inline: 16px; }
-        main { margin-top: 30px; }
-        .notice { padding: 18px; font-size: 14px; }
+        main { padding: 24px 18px; }
       }
     </style>
   </head>
@@ -93,12 +74,7 @@
       <span class="brand-note">Website design and implementation support</span>
     </header>
     <main>
-      <p class="eyebrow">General information</p>
-      <h1>Cease-and-desist information</h1>
-      <div class="notice">
-        <p>This page is a neutral placeholder while its content is being prepared. It is not a cease-and-desist notice, legal demand, or court order, and it does not identify or accuse any person or organization.</p>
-        <p>For advice about a specific dispute or communication, consult a licensed attorney in the relevant jurisdiction. This page is not legal advice.</p>
-      </div>
+      <h1 class="apology">I'm sorry to Kevin Walters.</h1>
     </main>
   </body>
 </html>
