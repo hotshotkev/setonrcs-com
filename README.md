@@ -28,3 +28,16 @@ The page uses responsive HTML/CSS and a small fixed desktop/mobile layout previe
 The GitHub Actions workflow in `.github/workflows/deploy-pages.yml` publishes the fundraiser site from the `hotshotkev-medical-donations-page` branch. The current public preview is https://hotshotkev.github.io/setonrcs-com/.
 
 Search metadata uses an accurate page title and description. Hidden keyword lists and unrelated church or school names are intentionally omitted so search results do not imply an affiliation or endorsement.
+
+## Cloudflare Pages
+
+The site is plain static HTML, CSS, JavaScript, and assets; its local links are relative, so it can also be hosted at a domain root on Cloudflare Pages without a code build.
+
+To connect it in Cloudflare Pages, select this GitHub repository and use:
+
+- Production branch: `hotshotkev-medical-donations-page`
+- Framework preset: `None`
+- Build command: leave blank
+- Build output directory: `.`
+
+The repository root is the site's root directory (the default). After the first successful deployment, add `www.setonrcs.com` under the Pages project's **Custom domains**. If the DNS zone is in the same Cloudflare account, Cloudflare can create the DNS record; if DNS is managed elsewhere, add a CNAME for `www` pointing to the Pages project's `*.pages.dev` hostname. Keep the GitHub Pages preview until the Cloudflare deployment and custom domain are verified.
