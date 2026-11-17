@@ -31,13 +31,15 @@ Search metadata uses an accurate page title and description. Hidden keyword list
 
 ## Cloudflare Pages
 
-The site is plain static HTML, CSS, JavaScript, and assets; its local links are relative, so it can also be hosted at a domain root on Cloudflare Pages without a code build.
+The fundraiser is a plain static site, served from the repository root by the Cloudflare Pages project `setonrcs-com`.
 
-To connect it in Cloudflare Pages, select this GitHub repository and use:
+The fundraiser Pages project uses:
 
 - Production branch: `hotshotkev-medical-donations-page`
 - Framework preset: `None`
 - Build command: leave blank
 - Build output directory: `.`
 
-The repository root is the site's root directory (the default). After the first successful deployment, add `www.setonrcs.com` under the Pages project's **Custom domains**. If the DNS zone is in the same Cloudflare account, Cloudflare can create the DNS record; if DNS is managed elsewhere, add a CNAME for `www` pointing to the Pages project's `*.pages.dev` hostname. Keep the GitHub Pages preview until the Cloudflare deployment and custom domain are verified.
+The fundraiser Pages hostname is https://setonrcs-com.pages.dev/. The apex domains `setonrcs.com` and `setonsrc.com` are configured on this project and verified over HTTPS. No `www` aliases are configured. GitHub Pages remains available as a fallback.
+
+The separate Pages project `setonrcs-defamation` serves `defamation-site/` from the same production branch. Its current page is a neutral placeholder, not a legal notice or an allegation about any person. The intended custom domain is `defamation.setonrcs.com`.
