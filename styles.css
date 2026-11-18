@@ -203,6 +203,21 @@ h1, h2, blockquote { font-family: Georgia, "Times New Roman", serif; font-weight
 .payment-status { max-width: 540px; margin: 12px 0 8px; padding: 13px; border: 1px solid rgb(255 255 255 / 27%); background: rgb(255 255 255 / 5%); color: #f0d7b8; font-size: 11px; line-height: 1.7; }
 .payment-status strong { display: block; margin-bottom: 4px; color: #fffefa; }
 .review-note { max-width: 520px; margin: 14px 0 0; color: #c2cec2; font-size: 9px; line-height: 1.7; }
+.subscription-card { max-width: 620px; margin: 18px 0; padding: 18px; border: 1px solid rgb(255 255 255 / 27%); background: rgb(255 255 255 / 6%); }
+.subscription-label { margin: 0 0 8px; color: #f0d7b8; font-size: 9px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+.subscription-title { margin: 0 0 13px; color: #fffefa; font: 22px Georgia, serif; }
+.subscription-details { display: grid; grid-template-columns: max-content 1fr; gap: 7px 14px; margin: 0; font-size: 10px; line-height: 1.6; }
+.subscription-details dt { color: #c2cec2; }
+.subscription-details dd { margin: 0; color: #fffefa; }
+.subscription-description, .subscription-review { margin: 14px 0 0; color: #e1e4dc; font-size: 10px; line-height: 1.7; }
+.subscription-acknowledgment { display: flex; align-items: flex-start; gap: 9px; margin: 15px 0 12px; color: #fffefa; font-size: 10px; line-height: 1.6; cursor: pointer; }
+.subscription-acknowledgment input { flex: 0 0 auto; width: 15px; height: 15px; margin: 1px 0 0; accent-color: var(--gold); }
+.subscription-link[aria-disabled="true"] { opacity: .55; cursor: not-allowed; }
+.payment-qr { display: grid; justify-items: start; gap: 8px; margin-top: 16px; }
+.payment-qr[hidden] { display: none; }
+.payment-qr p { margin: 0; color: #e1e4dc; font-size: 10px; }
+.payment-qr img { display: block; width: 160px; height: 160px; padding: 7px; background: white; }
+.subscription-review { color: #c2cec2; font-size: 9px; }
 .disclaimer-link { margin: 13px 0 0; font-size: 10px; }
 .disclaimer-link a { color: #f0d7b8; text-underline-offset: 3px; }
 .donation-art { display: flex; flex-direction: column; align-items: center; color: #a6b6a6; }

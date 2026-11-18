@@ -44,6 +44,29 @@
   window.addEventListener("resize", updateViewMode);
   updateViewMode();
 
+  const subscriptionAck = document.getElementById("subscription-ack");
+  const subscriptionLink = document.getElementById("subscription-link");
+  const paymentQr = document.getElementById("payment-qr");
+
+  if (subscriptionAck && subscriptionLink && paymentQr) {
+    const updateSubscriptionAccess = () => {
+      const acknowledged = subscriptionAck.checked;
+      subscriptionLink.setAttribute("aria-disabled", String(!acknowledged));
+      subscriptionLink.tabIndex = acknowledged ? 0 : -1;
+      paymentQr.hidden = !acknowledged;
+      updateViewMode();
+    };
+
+    subscriptionAck.addEventListener("change", updateSubscriptionAccess);
+    subscriptionLink.addEventListener("click", (event) => {
+      if (!subscriptionAck.checked) {
+        event.preventDefault();
+        subscriptionAck.focus();
+      }
+    });
+    updateSubscriptionAccess();
+  }
+
   const unlockPage = () => {
     ageGate.hidden = true;
     document.body.classList.remove("gated");
