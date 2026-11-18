@@ -46,15 +46,12 @@
 
   const subscriptionAck = document.getElementById("subscription-ack");
   const subscriptionLink = document.getElementById("subscription-link");
-  const paymentQr = document.getElementById("payment-qr");
 
-  if (subscriptionAck && subscriptionLink && paymentQr) {
+  if (subscriptionAck && subscriptionLink) {
     const updateSubscriptionAccess = () => {
       const acknowledged = subscriptionAck.checked;
       subscriptionLink.setAttribute("aria-disabled", String(!acknowledged));
       subscriptionLink.tabIndex = acknowledged ? 0 : -1;
-      paymentQr.hidden = !acknowledged;
-      updateViewMode();
     };
 
     subscriptionAck.addEventListener("change", updateSubscriptionAccess);

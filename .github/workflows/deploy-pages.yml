@@ -32,7 +32,7 @@ jobs:
         run: |
           mkdir -p site/assets
           cp index.html disclaimer.html styles.css script.js site/
-          cp assets/arch-ai-datacenters.png assets/payment-qr.png site/assets/
+          cp assets/arch-ai-datacenters.png site/assets/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
